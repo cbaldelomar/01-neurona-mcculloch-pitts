@@ -5,12 +5,18 @@ from neuronas import NeuronaMcCullochPittsTodoEnUno
 
 
 def main():
-    tiempo_libre = 0
-    motivacion = 0
-    suscripcion = 0
-    neurona = NeuronaMcCullochPittsTodoEnUno(tiempo_libre, motivacion, suscripcion)
-    decision = neurona.activacion()
+    # D.1.1.
+    neurona = NeuronaMcCullochPittsTodoEnUno(1, 0, 0)
+    imprimir(neurona.activacion())
 
+    neurona = NeuronaMcCullochPittsTodoEnUno(0, 1, 0)
+    imprimir(neurona.activacion())
+
+    neurona = NeuronaMcCullochPittsTodoEnUno(0, 0, 1)
+    imprimir(neurona.activacion())
+
+
+def imprimir(decision):
     if decision == 1:
         print("Sí, ir al gym")
     if decision == 0:
