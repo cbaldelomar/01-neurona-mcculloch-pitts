@@ -5,9 +5,9 @@ from neuronas import NeuronaMcCullochPittsSencilla
 
 
 def main():
-    # D.1.5.a
+    # D.1.5.b
 
-    neurona = NeuronaMcCullochPittsSencilla(0.5, 1, 2, 2)
+    neurona = NeuronaMcCullochPittsSencilla(0.5, 1, 2, 1.1)
 
     # tiempo libre (1), motivacion (0), suscripcion (0)
     imprimir(neurona.activacion(1, 0, 0))
