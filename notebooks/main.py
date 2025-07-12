@@ -1,3 +1,5 @@
+"""Ejemplo de uso de neuronas"""
+
 import sys
 
 sys.path.append("./libs")
@@ -5,6 +7,7 @@ from neuronas import NeuronaMcCullochPittsSencilla
 
 
 def main():
+    """Ejecución del ejemplo de neurona"""
     # D.1.5.b
 
     neurona = NeuronaMcCullochPittsSencilla(0.5, 1, 2, 1.1)
@@ -23,9 +26,10 @@ def main():
 
 
 def imprimir(decision):
+    """Imprime la decisión de la neurona"""
     if decision == 1:
         print("Sí, ir al gym")
-    if decision == 0:
+    else:
         print("No, no ir al gym")
 
 
