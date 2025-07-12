@@ -1,6 +1,6 @@
 class NeuronaMcCullochPittsTodoEnUno:
-    def __init__(self, input1, input2, input3):
-        self.threshold = 1
+    def __init__(self, threshold, input1, input2, input3):
+        self.threshold = threshold
         self.input1 = input1
         self.input2 = input2
         self.input3 = input3

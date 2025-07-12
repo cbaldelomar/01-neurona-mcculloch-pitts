@@ -1,18 +1,18 @@
 import sys
 
-sys.path.append("./libs")
+sys.path.append("../libs")
 from neuronas import NeuronaMcCullochPittsTodoEnUno
 
 
 def main():
     # D.1.1.
-    neurona = NeuronaMcCullochPittsTodoEnUno(1, 0, 0)
+    neurona = NeuronaMcCullochPittsTodoEnUno(2, 1, 0, 0)
     imprimir(neurona.activacion())
 
-    neurona = NeuronaMcCullochPittsTodoEnUno(0, 1, 0)
+    neurona = NeuronaMcCullochPittsTodoEnUno(2, 0, 1, 0)
     imprimir(neurona.activacion())
 
-    neurona = NeuronaMcCullochPittsTodoEnUno(0, 0, 1)
+    neurona = NeuronaMcCullochPittsTodoEnUno(2, 0, 0, 1)
     imprimir(neurona.activacion())
 
 
